@@ -1,0 +1,21 @@
+server:
+    port: 8080
+spring:
+    application:
+        name: country-service
+    data:
+        mongodb:
+            database: allpa_project_country
+            host: localhost
+            port: 27017
+            username: root
+    devtools:
+        livereload:
+            enabled: false
+    mvc:
+        path match:
+            matching-strategy: ant_path_matcher
+    cloud:
+        config:
+            enabled: true
+            uri: http://localhost:8008
